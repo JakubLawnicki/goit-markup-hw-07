@@ -54,13 +54,13 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  &__icons:hover,
-  &__icons:focus {
-    background-color: $hoverColor;
-    fill: $backgroundColor;
-    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: $hoverColor;
+      fill: $backgroundColor;
+      cursor: pointer;
+    }
   }
 
   &__list {

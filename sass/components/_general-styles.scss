@@ -11,10 +11,10 @@ body {
 
 button {
   border-width: 0;
-}
 
-button:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 h1,

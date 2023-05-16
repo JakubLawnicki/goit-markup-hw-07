@@ -26,16 +26,16 @@
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  &__link:hover,
-  &__link:focus {
-    color: $hoverColor;
-  }
+    &:hover,
+    &:focus {
+      color: $hoverColor;
 
-  &__link:hover svg use,
-  &__link:focus svg use {
-    fill: $hoverColor;
+      & svg use,
+      & svg use {
+        fill: $hoverColor;
+      }
+    }
   }
 
   &__mail-icon {
@@ -78,42 +78,42 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  &__link:hover,
-  &__link:focus {
-    color: $hoverColor;
-  }
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+    }
 
-  &__link--agency,
-  &__link--portfolio {
-    color: $hoverColor;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.1;
-    position: relative;
-  }
+    &--agency,
+    &--portfolio {
+      color: $hoverColor;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.1;
+      position: relative;
+    }
 
-  &__link--agency::after {
-    content: "";
-    background-color: $hoverColor;
-    width: 51px;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    top: 44px;
-    display: block;
-  }
+    &--agency::after {
+      content: "";
+      background-color: $hoverColor;
+      width: 51px;
+      height: 4px;
+      border-radius: 2px;
+      position: absolute;
+      top: 44px;
+      display: block;
+    }
 
-  &__link--portfolio::after {
-    content: "";
-    background-color: $hoverColor;
-    width: 55px;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    top: 44px;
-    display: block;
+    &--portfolio::after {
+      content: "";
+      background-color: $hoverColor;
+      width: 55px;
+      height: 4px;
+      border-radius: 2px;
+      position: absolute;
+      top: 44px;
+      display: block;
+    }
   }
 
   &__links {
@@ -128,13 +128,13 @@
     line-height: 1.2;
     text-decoration: none;
     margin-right: 93px;
-  }
 
-  &__logo-studio {
-    color: #000;
-  }
+    &-studio {
+      color: #000;
+    }
 
-  &__logo-web {
-    color: $hoverColor;
+    &-web {
+      color: $hoverColor;
+    }
   }
 }

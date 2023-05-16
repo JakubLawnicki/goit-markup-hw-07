@@ -21,14 +21,14 @@
     width: 100%;
     height: 100%;
     clip: rect(1px, 1px, 1px, 1px);
-  }
 
-  &__input:checked + label {
-    opacity: 0;
-  }
+    &:checked + label {
+      opacity: 0;
+    }
 
-  &__input:checked + label + label {
-    opacity: 1;
+    &:checked + label + label {
+      opacity: 1;
+    }
   }
 
   &__label {
@@ -42,36 +42,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
 
-  &__label:nth-child(2) {
-    position: absolute;
-    left: 15px;
-    opacity: 1;
-  }
+    &:nth-child(2) {
+      position: absolute;
+      left: 15px;
+      opacity: 1;
+    }
 
-  &__label:nth-child(2)::before {
-    content: "";
-    background-image: url("../images/Icons/Form/Vector.svg");
-    width: 16px;
-    height: 15px;
-    display: flex;
-    align-items: center;
-    margin-right: 8px;
-  }
+    &:nth-child(2)::before {
+      content: "";
+      background-image: url("../images/Icons/Form/Vector.svg");
+      width: 16px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+    }
 
-  &__label:nth-child(3) {
-    opacity: 0;
-  }
+    &:nth-child(3) {
+      opacity: 0;
+    }
 
-  &__label:nth-child(3)::before {
-    content: "";
-    background-image: url("../images/Icons/Form/icon\ check.svg");
-    width: 16px;
-    height: 15px;
-    display: flex;
-    align-items: center;
-    margin-right: 9px;
+    &:nth-child(3)::before {
+      content: "";
+      background-image: url("../images/Icons/Form/icon\ check.svg");
+      width: 16px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      margin-right: 9px;
+    }
   }
 
   &__statute {
@@ -112,11 +112,11 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     outline: 0;
-  }
 
-  &__comment:hover,
-  &__comment:focus {
-    border-color: $hoverColor;
+    &:hover,
+    &:focus {
+      border-color: $hoverColor;
+    }
   }
 
   &__icon-mail {
@@ -152,16 +152,16 @@
     margin-bottom: 10px;
     padding: 11px 0 11px 42px;
     outline: 0;
-  }
 
-  &__input:hover,
-  &__input:focus {
-    border-color: $hoverColor;
-  }
+    &:hover,
+    &:focus {
+      border-color: $hoverColor;
 
-  &__input:hover + svg,
-  &__input:focus + svg {
-    fill: $hoverColor;
+      & + svg,
+      & + svg {
+        fill: $hoverColor;
+      }
+    }
   }
 
   &__label {
@@ -233,10 +233,10 @@
   transition-property: opacity, visibility;
   transition-delay: 1s;
   transition-delay: 1s;
-}
 
-.is-hidden .modal {
-  animation: modalClose 1s;
+  & .modal {
+    animation: modalClose 1s;
+  }
 }
 
 .modal {
@@ -271,11 +271,11 @@
     transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  &__close-button:hover,
-  &__close-button:focus {
-    border-color: $hoverColor;
-    fill: $hoverColor;
+    &:hover,
+    &:focus {
+      border-color: $hoverColor;
+      fill: $hoverColor;
+    }
   }
 }
